@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "dompurify": "^3.0.8",
     "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
     "monday-sdk-js": "^0.5.2",
     "node-fetch": "^3.3.2",
     "react": "^18.2.0",
@@ -23,6 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://05ba1b8f45faf723.cdn2.monday.app",
   "eslintConfig": {
     "extends": [
       "react-app",
