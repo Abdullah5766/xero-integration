@@ -7,7 +7,7 @@ export default function LandingPage() {
     const HandleXeroLogin = () => {
 
         const sanitizedRedirectUrl = DOMPurify.sanitize("https://i9j279set4.execute-api.us-east-1.amazonaws.com/prod/connect");
-    window.location.href = sanitizedRedirectUrl;
+    window.top.location.href = sanitizedRedirectUrl;
     }
 
     return (
