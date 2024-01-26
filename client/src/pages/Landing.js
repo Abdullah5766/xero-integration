@@ -10,7 +10,7 @@ export default function Landing() {
 
     const monday = mondaySdk();
     const [redirect,setRedirect] = useState(false);
-  
+    const [token , setToken]= useState('');
    
     const HandleXeroLogin = () => {
 
@@ -31,7 +31,7 @@ export default function Landing() {
     
               if (accessToken) {
                 setRedirect(true);
-              
+                setToken(accessToken);
               }
               
             })
@@ -42,7 +42,7 @@ export default function Landing() {
     
       }, [monday]);
 
-      if (redirect) {
+      if (redirect && token) {
         return <Navigate to={'/mondaycard'} />
       }
       

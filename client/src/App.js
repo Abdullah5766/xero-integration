@@ -1,38 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {HomeLayout,Landing, MondayCard , Main, UserContextProvider} from "./pages"
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomeLayout />,
-    // errorElement: <Error />,
-    children: [
-      {
-        index: true,
-        element: <Landing />,
-      },
-      {
-        path: "mondaycard",
-        element: <MondayCard />,
-      },
-      {
-        path: "main",
-        element: <Main />,
-      },
-     
-    ],
-  },
-]);
+import { HomeLayout, Landing, MondayCard, Main, UserContextProvider } from "./pages";
 
 function App() {
-  
   return (
-     
     <UserContextProvider>
-    <RouterProvider router={router} />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={<HomeLayout />}
+          >
+            <Route index element={<Landing />} />
+            <Route path="mondaycard" element={<MondayCard />} />
+            <Route path="main" element={<Main />} />
+          </Route>
+        </Routes>
+      </Router>
     </UserContextProvider>
-  
   );
-};
+}
+
 export default App;
