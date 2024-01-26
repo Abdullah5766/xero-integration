@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a2e93f3.css",
+    "main.js": "/static/js/main.f2d4f4bc.js",
+    "static/media/main2.svg": "/static/media/main2.d6e42dcb604e4e890e71695e291c59a9.svg",
+    "static/media/main3.svg": "/static/media/main3.5fed3681344134d83d03bfd4fd1426b5.svg",
+    "static/media/Logo-monday.webp": "/static/media/Logo-monday.ca7191ab18acfca6b11b.webp",
+    "index.html": "/index.html",
+    "main.6a2e93f3.css.map": "/static/css/main.6a2e93f3.css.map",
+    "main.f2d4f4bc.js.map": "/static/js/main.f2d4f4bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a2e93f3.css",
+    "static/js/main.f2d4f4bc.js"
+  ]
+}

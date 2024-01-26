@@ -29,7 +29,7 @@ export default function MondayCard() {
           axios.get(`https://i9j279set4.execute-api.us-east-1.amazonaws.com/prod/monday-callback?code=${sanitizedAuthorizedCode}`)
             .then((response) => {
               const accessToken = response.data.access_token;
-              console.log(accessToken);
+           
               monday.setToken(accessToken);
     
               if (accessToken) {
