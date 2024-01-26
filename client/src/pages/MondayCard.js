@@ -37,6 +37,7 @@ export default function MondayCard() {
                 setUserToken(accessToken);
                 setRedirect(true);
               }
+              console.log(userToken);
             })
             .catch((error) => {
               console.error('Error exchanging code for tokens:', error);

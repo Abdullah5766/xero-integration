@@ -1,8 +1,8 @@
 import React from "react";
 import './App.css';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import {HomeLayout,Landing, MondayCard , Main, UserContextProvider} from "./pages"
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <HomeLayout />,

@@ -67,7 +67,7 @@ export default function Main() {
         const columnsToCreate = ['Invoice Number', 'Reference', 'Status', 'Amount Due'];
         let createdColumnsCount = 0;
         let columnsExist = false;
-    
+        console.log(userToken)
         try {
           const response = await fetch("https://api.monday.com/v2", {
             method: 'post',
